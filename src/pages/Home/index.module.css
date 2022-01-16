@@ -1,38 +1,44 @@
 .root {
-    display: flex;
-    height: 100%;
-    background: pink;
+  display: flex;
+  height: 100%;
+  background: pink;
 }
-
 .aside {
-    width: 208px;
-    height: 100%;
-    background-color: aqua;
+  width: 208px;
+  height: 100%;
+  background-color: 001529;
 }
-
+.log {
+  width: 208px;
+  height: 48px;
+  background-color: #001529;
+}
+.log a {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.log a img {
+  width: 28px;
+  height: 28px;
+}
+.log a h1 {
+  margin-left: 12px;
+  color: #fff;
+}
 .main {
-    flex: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-between;
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
 .header {
-    height: 48px;
-    background: #000;
+  height: 48px;
+  background: #001529;
 }
-
-.article {
-    
-}
-
 .footer {
-    height: 124px;
-    background: blue;
+  height: 124px;
+  background: blue;
 }
-
-
-
-
-
-
