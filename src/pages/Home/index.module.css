@@ -1,0 +1,38 @@
+.root {
+    display: flex;
+    height: 100%;
+    background: pink;
+}
+
+.aside {
+    width: 208px;
+    height: 100%;
+    background-color: aqua;
+}
+
+.main {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.header {
+    height: 48px;
+    background: #000;
+}
+
+.article {
+    
+}
+
+.footer {
+    height: 124px;
+    background: blue;
+}
+
+
+
+
+
+

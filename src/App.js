@@ -1,16 +1,23 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { Component } from "react/cjs/react.production.min";
-import Home from "./pages/Home";
+
 import Login from "./pages/Login";
 
-import { isAuth } from "./utils";
+import Home from "./pages/Home";
+import Dashboard from "./pages/Dashboard";
+import User from "./pages/User";
+
 
 function App() {
   return (
     <Routes>
+
       <Route path="login" element={<Login />} />
-      <Route path="/" element={<Home />}/>
+      <Route path="home" element={<Home />}>
+        <Route index element={<Dashboard />} />
+        <Route path="user" element={<User />} />
+      </Route>
+
     </Routes>
   );
 }
